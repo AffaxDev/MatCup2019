@@ -9,8 +9,8 @@ function load(star) {
 	const ctx = canvas.getContext('2d');
 
 	const positions = [];
-	const margin = 16;
-	const size = 9;
+	const margin = 13;
+	const size = 7;
 
 	/*iziToast.success({
         id: 'success',
@@ -27,8 +27,8 @@ function load(star) {
     });*/
 
 	const middle = {
-		'x': 16,
-		'y': 14
+		'x': 18,
+		'y': 22
 	}
 
 	positions.push({
@@ -550,5 +550,9 @@ $("#main-form").submit(function(event) {
 		if (c > 7) c = 3;
 	}, 1000);*/
 
-  	load(parseInt($('input#number').val()) + 1);
+	let newGen = parseInt($('input#number').val()) + 1;
+	newGen = Math.min(newGen, 11);
+	newGen = Math.max(newGen, 2);
+
+  	load(newGen);
 });
