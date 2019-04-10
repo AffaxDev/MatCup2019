@@ -4,6 +4,7 @@
 	<title>Madcup 2019 Lahden Yhteiskoulu</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	<link rel="stylesheet" href="css/ela.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -12,27 +13,30 @@
 <body>
 	<div class="content">
 		<div class="container" style="margin-top: 15px">
-			<div id="app-header">
-				<h1>Kasvavat t‰hdet</h1>
-				<h5>Lahden Yhteiskoulun Matcup 2019 osallistuminen</h5>
-			</div>
-			<div class="card" style="margin-top:30px">
-				<div class="card-header">
-					<h4 class="card-title">Generaattori</h4>
+			<div class="container-fluid">
+				<div id="app-header">
+					<h1>Kasvavat t√§hdet</h1>
+					<h5>Lahden Yhteiskoulun Matcup 2019 osallistuminen</h5>
 				</div>
-				<div class="card-body">
-					<div class="row">
-						<div class="col-md-6">
-							<form id="main-form" action="#">
-								<div class="form-group">
-									<label for="number">T‰hden Numero</label>
-									<input type="number" required="required" class="form-control" id="number">
-								</div>
-								<input type="submit" class="btn btn-primary col-md-12"></input>
-							</form>
-						</div>
-						<div class="col-md-6">
-							<canvas width="1000" height="1050" id="tahti-canvas"> </canvas>
+				<div class="card" style="margin-top:30px">
+					<div class="card-header">
+						<h4 class="card-title">Generaattori</h4>
+					</div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<form id="main-form" action="#">
+									<div class="form-group">
+										<label for="number">T√§hden Numero (1-10)</label>
+										<input type="number" required="required" class="form-control" id="number">
+									</div>
+									<input type="submit" class="btn btn-primary col-md-12"></input>
+								</form>
+							</div>
+
+							<div class="col-sm-6">
+								<canvas width="1000" height="1260" id="tahti-canvas"> </canvas>
+							</div>
 						</div>
 					</div>
 				</div>
